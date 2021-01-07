@@ -4,12 +4,14 @@
 #include<math.h>
 #include<float.h>
 #define pi 3.142
+int fact(int);
 void main()
 {
   void calc();
   void palin();
   void quad();
   void taylor();
+  void binomial();
   int ch,a;
   clrscr();
   loop:
@@ -181,7 +183,6 @@ void taylor()
 
 void binomial()
 {
-    int fact(int);
     int n,r,nCr;
     printf("Enter the value of n and r - ");
     scanf("%d %d",&n,&r);
