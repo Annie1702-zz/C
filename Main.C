@@ -13,7 +13,7 @@ void main()
   int ch,a;
   clrscr();
   loop:
-  printf("\n1. Calculator Program\n2. Palindrome Program\n3. Root Program\n4. Taylor Series Program\n5. Exit\nWhich program you wanna continue with - ");
+  printf("\n1. Calculator Program\n2. Palindrome Program\n3. Root Program\n4. Taylor Series Program\n5. Binomial Function\n6. Exit\nWhich program you wanna continue with - ");
   scanf("%d",&ch);
   switch(ch)
   {
@@ -32,8 +32,12 @@ void main()
     case 4:
       taylor();
       break;
-
+	  
     case 5:
+      binomial();
+      break;
+
+    case 6:
       break;
 
     default:
@@ -174,3 +178,24 @@ void taylor()
     printf("\nThe sin(%d) = %.3f",degree,sum);
     printf("Using library function, the sin(%d) = %.3f\n",degree,sin(x));
 }
+
+void binomial()
+{
+    int fact(int);
+    int n,r,nCr;
+    printf("Enter the value of n and r - ");
+    scanf("%d %d",&n,&r);
+    nCr = fact(n)/(fact(r)*fact(n-r));
+    printf("Value of nCr is %d",nCr);
+}
+
+int fact(int n)
+{
+    if(n==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return (n*fact(n-1));
+    }
