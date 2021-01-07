@@ -45,8 +45,11 @@ void main()
     default:
       printf("Enter valid option\n");
   }
-  printf("Do you wanna continue (1 -> Y / 0 -> N) - ");
-  scanf("%d",&a);
+  if(ch!=6)
+  { 
+      printf("Do you wanna continue (1 -> Y / 0 -> N) - "); 
+      scanf("%d",&a);
+  }
   if(a==1)
   { goto loop; }
   getch();
