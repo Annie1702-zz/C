@@ -190,7 +190,7 @@ void binomial()
     printf("Enter the value of n and r - ");
     scanf("%d %d",&n,&r);
     nCr = fact(n)/(fact(r)*fact(n-r));
-    printf("Value of nCr is %d",nCr);
+    printf("Value of nCr is %d\n",nCr);
 }
 
 int fact(int n)
