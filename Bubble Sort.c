@@ -1,8 +1,10 @@
 #include<stdio.h>
+#include<conio.h>
 void bsort(int[],int);
 void main()
 {
     int i,j,m;
+    clrscr();
     printf("Enter the no. of elements - ");
     scanf("%d",&m);
     int ar[m];
@@ -17,6 +19,7 @@ void main()
     {
         printf("%d ",ar[i]);
     }
+getch();
 }
 void bsort(int ar[],int m)
 {
