@@ -14,6 +14,7 @@ void main()
   void binomial();
   void bsort();
   int ch,a;
+	clrscr();
   loop:
   printf("\n1. Calculator Program\n2. Palindrome Program\n3. Root Program\n4. Taylor Series Program\n5. Binomial Function\n6. Binary Sorting\n7. Exit\nWhich program you wanna continue with - ");
   scanf("%d",&ch);
@@ -59,6 +60,7 @@ void main()
   { 
       goto loop; 
   }
+  getch();
 }
 
 void calc()
