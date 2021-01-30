@@ -21,7 +21,7 @@ void main()
 void bsort(int ar[],int m)
 {
     int temp,i,j,a=0;
-    for(i=0;i<(m-1);i++)
+    for(i=0;i<m;i++)
     {
         for(j=0;j<(m-1);j++)
         {
