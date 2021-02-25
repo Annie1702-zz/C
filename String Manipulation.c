@@ -1,10 +1,12 @@
 #include<stdio.h>
+#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
 void main()
 {
     char s1[30],s2[30];
     int ch,a;
+    clrscr();
     loop:
     printf("\nEnter a string - ");
     scanf("%s",s1);
@@ -53,4 +55,5 @@ void main()
            printf("\nEnter valid choices!!!!");
     }
     goto loop;
+    getch();
 }
