@@ -40,19 +40,19 @@ void main()
            break;
            
         case 4:
+           strrev(s1); 
            printf("\nThe reverse of String S1 is %s",s1);
            break;
            
         case 5:
-           strlen(s1);
-           printf("\nThe length of String S1 is %s",s1);
+           printf("\nThe length of String S1 is %s",strlen(s1));
            break;
            
         case 6:
            exit(0);
            
         default:
-           printf("\nEnter valid choices!!!!");
+           printf("\nEnter valid choices!!!");
     }
     goto loop;
     getch();
